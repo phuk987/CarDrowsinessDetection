@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <link rel="icon" href="https://uploads-ssl.webflow.com/643d8f9aebefb8cff456de02/643d8f9aebefb8342a56de31_32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Spice">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Camera</title>
+      <style>
+          body{
+    padding: 0;
+    margin: 0;
+    font-family: "Bungee Spice", sans-serif;
+
+}
+.background{
+    background: url('https://uploads-ssl.webflow.com/643d8f9aebefb8cff456de02/647b44e5381b769798c6113d_Frame%20340100.png');
+    background-size: cover;
+    background-position-y: -80px;
+    font-size: 16px;
+
+}
+.header{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.anh{
+    height:32px;
+    width:32px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+.tieude{
+    font-family: "Bungee Spice", sans-serif;
+    color:rgb(252, 250, 250);
+    height: 95%;
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.middle{
+    width: 100%;
+    height: 624px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    width:30% ;
+    height:80%;
+    border-radius: 20px;
+    font-weight:lighter;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+.nut{
+    width: 80%;
+    height: 30%;
+}
+.nut ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.wifi{
+    width: 80%;
+    height: 50%;
+}
+.record{
+    border-radius: 10px;
+    font-weight: lighter;
+}
+.record h1{
+    font-size: 25px;
+    color: aliceblue;
+}
+.record button{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(14, 13, 13);
+}
+.record button:hover{
+    color: rgb(21, 218, 21);
+}
+
+.stop{
+    margin-left: 50px;
+}
+.stop h1{
+    font-size: 25px;
+    color: aliceblue;
+}
+.stop button{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: rgb(12, 12, 12);
+}
+.stop button:hover{
+    color: red;
+}
+
+.nutwifi {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    border: 3px solid #cc4c08;
+    background-color: #b37148;
+    color: #080808;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.nutwifi:hover {
+    background-color: #2d85e2;
+
+}
+
+.nutwifi:active {
+    background-color: #003366;
+}
+.khung {
+    display: block;
+    border: 3px solid #cc4c08;
+    border-radius: 2px;
+}
+.khung1 {
+    width: 168px;
+    padding-bottom: 20px;
+}
+.khung2 {
+    display: block;
+    border: 3px solid #cc4c08;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+#eye i{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(9, 9, 9);
+    position: absolute;
+    z-index: 2;
+    margin-left: 145px;
+}
+
+.display{
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-right: 2%;
+
+
+}
+.display #video{
+    width: 100%;
+    height: 100%;
+    border:5px solid rgb(240, 127, 6);
+    border-radius: 20px;
+
+
+}
+
+
+.lich{
+    height: 100px;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.lich #days{
+    font-size: 25px;
+    color: aliceblue;
+}
+.lich #dates{
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 2px;
+}
+.lich #times{
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 5px;
+}
+#days, #dates{
+    display: inline-block;
+
+
+}
+      </style>
+  </head>
+  <meta charset="utf-8">
+        <link rel="stylesheet" href="app.css">
+  <body>
+    <div class="background">
+        <div class="header">
+            <div class="lich">
+                <div id="days"></div>
+                <div id="dates"></div>
+                <div id="times"></div>
+            </div>
+            <h1 class="tieude" >Camera Control</h1>
+        </div>
+        <div class="middle">
+            <div class="menu">
+                <div class="nut">
+                    <ul>
+                        <li>
+                            <div class="record">
+                                <h1>Start</h1>
+                                <button><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stop">
+                                <h1>Stop</h1>
+                                <button><i class="fa fa-stop-circle" aria-hidden="true"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wifi">
+                    <h1>Change WiFi Configuration</h1>
+                    <form action="/" id="wifiForm" method="post">
+                    <label for="ssid">WiFi SSID:</label>
+                    <input class="khung" type="text" id="ssid" name="ssid" required><br>
+                    <label for="password">WiFi Passwork:</label>
+                    <div class="khung1">
+                        <input class="khung2" type="password" id="password" name="password" required>
+                        <div id="eye">
+                            <i class="far fa-eye"></i>
+                        </div>
+                    </div>
+                    
+                    <input class="nutwifi" type="submit" value="Change WiFi">
+                    </form>
+                </div>
+                    
+            </div>
+            <div class="display">
+            <img id="video" src="{{ url_for('image_feed') }}">
+            </div>
+        </div>
+    </div>
+   </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    window.onload = setInterval(clock,1000);
+    function clock()
+    {
+    var d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth();
+    var montharr =["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+    month=montharr[month];
+    var year = d.getFullYear();
+    var day = d.getDay();
+    var dayarr =["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    day=dayarr[day];
+    var hour =d.getHours();
+    var min = d.getMinutes();
+    var sec = d.getSeconds();
+    document.getElementById("days").innerHTML=day+", ";
+    document.getElementById("dates").innerHTML=month+" "+date+", "+year;
+    document.getElementById("times").innerHTML=hour+":"+min+":"+sec;
+    }
+
+    $(document).ready(function(){
+    $('#eye').click(function(){
+        $(this).toggleClass('open');
+        $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+        if($(this).hasClass('open')){
+            $(this).prev().attr('type', 'text');
+        }else{
+            $(this).prev().attr('type', 'password');
+        }
+    });
+});
+</script>
+    <script>
+        const form = document.getElementById('wifiForm');
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch('/', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            if (!data.success) {
+                alert(data.message); // Hiển thị thông báo lỗi khi kết nối thất bại
+            }
+        });
+    </script>
+
+</html>

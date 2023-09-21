@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.anh{
+    height:75%;
+    width:6%;
+    padding-left: 20px;
+    
+}
+.tieude{
+    font-style: oblique;
+    color:steelblue;
+    height: 95%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-size: 35px;
+   
+}
+.middle{
+    width: 100%;
+    height: 600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    width:20% ;
+    height:100%;
+    background-color:rgb(166, 200, 252);
+    border:10px solid rgb(78, 140, 233);
+    border-radius: 20px;
+    font-weight:lighter;
+    
+}
+.display{  
+    width: 80%;
+    height: 100%;
+    background-color:rgb(166, 200, 252);
+    border:10px solid rgb(78, 140, 233);
+    border-radius: 20px;
+    margin-left: 5px;
+
+   
+}
+.display #video{
+    width: 80%;
+    height: 80%;
+    margin-left: 20%;
+}
+.display #demo{
+    font-style: oblique;
+    color:rgb(10, 40, 64);
+    height: 8%;
+    margin-left: 40%;
+    font-size: 35px;
+}
+#danhmuc{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0, auto;
+    font-weight: bold;
+}
+#danhmuc li a{
+    font-size: 25px;
+    color: black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(45, 126, 163);
+}
+.lich{
+    padding:20px;
+    background:#f1f1f1;
+    border-radius:10px;
+    font-size:30px;
+    border:2px solid #999;
+    }
